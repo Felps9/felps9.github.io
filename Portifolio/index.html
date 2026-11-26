@@ -1,0 +1,391 @@
+index.html 
+ 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfólio de Felipe Alves - Desenvolvedor Front-End formado em Análise e Desenvolvimento de Sistemas.">
+<title>Felipe Alves | Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind.config.js"></script>
+<script src="js/theme.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-surface text-slate-600 font-sans antialiased transition-colors duration-300 dark:bg-surface-dark dark:text-slate-300">
+<!-- ===================== HEADER ===================== -->
+<header id="header" class="fixed inset-x-0 top-0 z-50 bg-surface/90 backdrop-blur transition-shadow dark:bg-surface-dark/90">
+<nav class="mx-auto flex h-16 max-w-5xl items-center justify-between px-6" aria-label="Navegação principal">
+<a href="#home" class="text-lg font-semibold text-slate-800 dark:text-white">Felipe</a>
+<ul id="nav-menu" class="nav-menu absolute inset-x-0 top-16 hidden flex-col gap-4 bg-surface px-6 py-6 shadow-card md:static md:flex md:flex-row md:gap-8 md:bg-transparent md:p-0 md:shadow-none dark:bg-surface-dark md:dark:bg-transparent">
+<li><a href="#home" class="nav-link">Início</a></li>
+<li><a href="#about" class="nav-link">Sobre</a></li>
+<li><a href="#skills" class="nav-link">Habilidades</a></li>
+<li><a href="#qualification" class="nav-link">Qualificação</a></li>
+<li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+<li><a href="#contact" class="nav-link">Contato</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<button id="theme-toggle" type="button" class="text-xl text-slate-800 hover:text-primary dark:text-white" aria-label="Alternar tema claro/escuro">
+<i class="ri-moon-line" data-theme-icon></i>
+</button>
+<button id="nav-toggle" type="button" class="text-2xl text-slate-800 md:hidden dark:text-white" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
+<i class="ri-menu-line"></i>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- ===================== HOME ===================== -->
+<section id="home" class="section pt-28 md:pt-36">
+<div class="mx-auto grid max-w-5xl items-center gap-10 px-6 md:grid-cols-[auto_1fr_1fr]">
+<ul class="order-2 flex justify-center gap-6 text-xl text-primary md:order-none md:flex-col">
+<li><a href="https://www.linkedin.com/in/felipe-alves-b9229" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-primary-dark"><i class="ri-linkedin-box-line"></i></a></li>
+<li><a href="https://github.com/Felps9" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-primary-dark"><i class="ri-github-line"></i></a></li>
+<li><a href="#contact" aria-label="Contato" class="hover:text-primary-dark"><i class="ri-mail-line"></i></a></li>
+</ul>
+<div class="order-3 text-center md:order-none md:text-left">
+<h1 class="text-4xl font-bold text-slate-800 md:text-5xl dark:text-white">Olá, eu sou o Felipe</h1>
+<h2 class="mt-2 text-lg font-medium text-slate-700 dark:text-slate-200">Desenvolvedor Front-End</h2>
+<p class="mt-4 max-w-md text-sm leading-relaxed">
+
+            Formado em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e com grande interesse em processos.
+
+            Crio interfaces web responsivas, acessíveis e fáceis de manter.
+</p>
+<a href="#contact" class="btn-primary mt-8">
+
+            Fale comigo <i class="ri-send-plane-line"></i>
+</a>
+</div>
+<div class="order-1 flex justify-center md:order-none">
+<div class="blob h-64 w-64 overflow-hidden bg-primary md:h-80 md:w-80">
+<img src="https://github.com/Felps9.png?size=460" alt="Foto de perfil de Felipe Alves" width="320" height="320" class="h-full w-full object-cover" loading="eager">
+</div>
+</div>
+</div>
+<div class="mx-auto mt-12 hidden max-w-5xl px-6 md:block">
+<a href="#about" class="inline-flex items-center gap-2 text-sm font-medium text-slate-800 hover:text-primary dark:text-white">
+<i class="ri-mouse-line text-2xl text-primary"></i> Role para baixo <i class="ri-arrow-down-line text-primary"></i>
+</a>
+</div>
+</section>
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section">
+<h2 class="section-title">Sobre mim</h2>
+<span class="section-subtitle">Minha apresentação</span>
+<div class="mx-auto grid max-w-5xl items-center gap-10 px-6 md:grid-cols-2">
+<img src="https://github.com/Felps9.png?size=460" alt="Felipe Alves" width="350" height="350" loading="lazy" class="mx-auto w-64 rounded-xl object-cover shadow-card md:w-80">
+<div class="text-center md:text-left">
+<p class="text-sm leading-relaxed">
+
+            Sou desenvolvedor web formado em Análise e Desenvolvimento de Sistemas e participante do curso de Front-End do
+
+            PROA Transforme-se. Gosto de entender processos e transformar necessidades em soluções digitais claras e bem estruturadas.
+</p>
+<ul class="my-8 flex justify-center gap-8 md:justify-start">
+<li class="text-center">
+<span class="block text-2xl font-semibold text-slate-800 dark:text-white">03+</span>
+<span class="text-xs">Projetos<br>publicados</span>
+</li>
+<li class="text-center">
+<span class="block text-2xl font-semibold text-slate-800 dark:text-white">ADS</span>
+<span class="text-xs">Formação<br>superior</span>
+</li>
+<li class="text-center">
+<span class="block text-2xl font-semibold text-slate-800 dark:text-white">PROA</span>
+<span class="text-xs">Curso<br>Front-End</span>
+</li>
+</ul>
+<!-- TODO: adicionar o arquivo do currículo em assets/curriculo-felipe-alves.pdf -->
+<a href="assets/curriculo-felipe-alves.pdf" download class="btn-primary">
+
+            Baixar CV <i class="ri-download-line"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="section">
+<h2 class="section-title">Habilidades</h2>
+<span class="section-subtitle">Meu nível técnico</span>
+<div class="mx-auto grid max-w-5xl gap-8 px-6 md:grid-cols-2">
+<div class="skills-group" data-skills-group data-open="true">
+<button type="button" class="skills-header" data-skills-toggle aria-expanded="true">
+<i class="ri-code-s-slash-line text-3xl text-primary"></i>
+<span class="flex-1 text-left">
+<span class="block font-semibold text-slate-800 dark:text-white">Desenvolvimento Front-End</span>
+<span class="text-xs">Interfaces web</span>
+</span>
+<i class="ri-arrow-down-s-line skills-arrow text-2xl text-primary"></i>
+</button>
+<ul class="skills-list">
+<li class="skill" style="--level: 90%"><span>HTML</span><span>90%</span></li>
+<li class="skill" style="--level: 85%"><span>CSS</span><span>85%</span></li>
+<li class="skill" style="--level: 75%"><span>JavaScript</span><span>75%</span></li>
+<li class="skill" style="--level: 70%"><span>Tailwind CSS</span><span>70%</span></li>
+</ul>
+</div>
+<div class="skills-group" data-skills-group data-open="false">
+<button type="button" class="skills-header" data-skills-toggle aria-expanded="false">
+<i class="ri-terminal-box-line text-3xl text-primary"></i>
+<span class="flex-1 text-left">
+<span class="block font-semibold text-slate-800 dark:text-white">Programação</span>
+<span class="text-xs">Fundamentos e ferramentas</span>
+</span>
+<i class="ri-arrow-down-s-line skills-arrow text-2xl text-primary"></i>
+</button>
+<ul class="skills-list">
+<li class="skill" style="--level: 80%"><span>Lógica de programação</span><span>80%</span></li>
+<li class="skill" style="--level: 70%"><span>Programação Orientada a Objetos</span><span>70%</span></li>
+<li class="skill" style="--level: 75%"><span>Git e GitHub</span><span>75%</span></li>
+</ul>
+</div>
+<div class="skills-group" data-skills-group data-open="false">
+<button type="button" class="skills-header" data-skills-toggle aria-expanded="false">
+<i class="ri-flow-chart text-3xl text-primary"></i>
+<span class="flex-1 text-left">
+<span class="block font-semibold text-slate-800 dark:text-white">Processos</span>
+<span class="text-xs">Análise e melhoria</span>
+</span>
+<i class="ri-arrow-down-s-line skills-arrow text-2xl text-primary"></i>
+</button>
+<ul class="skills-list">
+<li class="skill" style="--level: 80%"><span>Análise de requisitos</span><span>80%</span></li>
+<li class="skill" style="--level: 75%"><span>Mapeamento de processos</span><span>75%</span></li>
+<li class="skill" style="--level: 70%"><span>Metodologias ágeis</span><span>70%</span></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ===================== QUALIFICATION ===================== -->
+<section id="qualification" class="section">
+<h2 class="section-title">Qualificação</h2>
+<span class="section-subtitle">Minha jornada</span>
+<div class="mx-auto max-w-3xl px-6">
+<div class="mb-10 flex justify-center gap-8" role="tablist">
+<button type="button" class="qualification-tab is-active" role="tab" aria-selected="true" data-tab-target="education">
+<i class="ri-graduation-cap-line text-xl"></i> Formação
+</button>
+<button type="button" class="qualification-tab" role="tab" aria-selected="false" data-tab-target="work">
+<i class="ri-briefcase-line text-xl"></i> Experiência
+</button>
+</div>
+<!-- TODO: ajustar períodos e descrições conforme o histórico real do Felipe -->
+<ol class="timeline" data-tab-content="education">
+<li class="timeline-item">
+<h3 class="font-medium text-slate-800 dark:text-white">Análise e Desenvolvimento de Sistemas</h3>
+<span class="block text-sm">Graduação</span>
+<span class="timeline-date"><i class="ri-calendar-line"></i> Concluído</span>
+</li>
+<li class="timeline-item">
+<h3 class="font-medium text-slate-800 dark:text-white">Desenvolvimento Front-End</h3>
+<span class="block text-sm">PROA - Transforme-se</span>
+<span class="timeline-date"><i class="ri-calendar-line"></i> 2026</span>
+</li>
+</ol>
+<ol class="timeline hidden" data-tab-content="work">
+<li class="timeline-item">
+<h3 class="font-medium text-slate-800 dark:text-white">Cargo atual</h3>
+<span class="block text-sm">Afya - São Paulo</span>
+<span class="timeline-date"><i class="ri-calendar-line"></i> Atual</span>
+</li>
+</ol>
+</div>
+</section>
+<!-- ===================== SERVICES ===================== -->
+<section id="services" class="section">
+<h2 class="section-title">Serviços</h2>
+<span class="section-subtitle">O que eu ofereço</span>
+<div class="mx-auto grid max-w-5xl gap-6 px-6 sm:grid-cols-2 lg:grid-cols-3">
+<article class="service-card">
+<i class="ri-layout-masonry-line text-3xl text-primary"></i>
+<h3 class="mt-4 text-lg font-medium text-slate-800 dark:text-white">Desenvolvimento<br>Front-End</h3>
+<p class="mt-3 text-sm">Criação de páginas com HTML, CSS e JavaScript seguindo boas práticas de organização de código.</p>
+</article>
+<article class="service-card">
+<i class="ri-smartphone-line text-3xl text-primary"></i>
+<h3 class="mt-4 text-lg font-medium text-slate-800 dark:text-white">Sites<br>Responsivos</h3>
+<p class="mt-3 text-sm">Layouts que se adaptam a celulares, tablets e desktops utilizando Tailwind CSS.</p>
+</article>
+<article class="service-card">
+<i class="ri-flow-chart text-3xl text-primary"></i>
+<h3 class="mt-4 text-lg font-medium text-slate-800 dark:text-white">Análise de<br>Processos</h3>
+<p class="mt-3 text-sm">Mapeamento e melhoria de processos para transformar necessidades em soluções digitais.</p>
+</article>
+</div>
+</section>
+<!-- ===================== PORTFOLIO ===================== -->
+<section id="portfolio" class="section">
+<h2 class="section-title">Portfólio</h2>
+<span class="section-subtitle">Projetos realizados</span>
+<div class="mx-auto max-w-4xl px-6" data-slider>
+<div class="relative">
+<div class="overflow-hidden">
+<ul class="slider-track" data-slider-track>
+<li class="slide">
+<div class="project-cover bg-gradient-to-br from-emerald-400 to-primary">
+<i class="ri-plant-line"></i>
+</div>
+<div>
+<h3 class="text-xl font-medium text-slate-800 dark:text-white">Urban Eden</h3>
+<p class="my-4 text-sm">Projeto integrador do curso Front-End do PROA Transforme-se, desenvolvido em equipe com HTML e CSS.</p>
+<a href="https://github.com/Felps9/Urban-eden" target="_blank" rel="noopener noreferrer" class="btn-primary">
+
+                    Ver projeto <i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</li>
+<li class="slide">
+<div class="project-cover bg-gradient-to-br from-amber-400 to-primary">
+<i class="ri-user-add-line"></i>
+</div>
+<div>
+<h3 class="text-xl font-medium text-slate-800 dark:text-white">Sistema de Cadastro de Alunos</h3>
+<p class="my-4 text-sm">Sistema de cadastro de alunos e notas desenvolvido em JavaScript.</p>
+<a href="https://github.com/Felps9/Sistema-de-Cadastro-de-Alunos" target="_blank" rel="noopener noreferrer" class="btn-primary">
+
+                    Ver projeto <i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</li>
+<li class="slide">
+<div class="project-cover bg-gradient-to-br from-sky-400 to-primary">
+<i class="ri-braces-line"></i>
+</div>
+<div>
+<h3 class="text-xl font-medium text-slate-800 dark:text-white">Projetos em P.O.O</h3>
+<p class="my-4 text-sm">Dois projetos em JavaScript aplicando os conceitos de Programação Orientada a Objetos.</p>
+<a href="https://github.com/Felps9/Projetos-em-P.O.O" target="_blank" rel="noopener noreferrer" class="btn-primary">
+
+                    Ver projeto <i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</li>
+</ul>
+</div>
+<button type="button" class="slider-arrow -left-2 md:-left-10" data-slider-prev aria-label="Projeto anterior">
+<i class="ri-arrow-left-s-line"></i>
+</button>
+<button type="button" class="slider-arrow -right-2 md:-right-10" data-slider-next aria-label="Próximo projeto">
+<i class="ri-arrow-right-s-line"></i>
+</button>
+</div>
+<div class="mt-8 flex justify-center gap-2" data-slider-dots></div>
+</div>
+</section>
+<!-- ===================== PROJECT CTA ===================== -->
+<section class="section">
+<div class="mx-auto max-w-5xl px-6">
+<div class="grid items-end gap-6 rounded-2xl bg-primary px-8 pt-10 text-center md:grid-cols-[1fr_auto] md:text-left">
+<div class="pb-10">
+<h2 class="text-2xl font-semibold text-white">Tem um novo projeto?</h2>
+<p class="mt-3 text-sm text-primary-light">Entre em contato agora e vamos conversar sobre como posso ajudar.</p>
+<a href="#contact" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-primary transition hover:bg-primary-light">
+
+              Fale comigo <i class="ri-send-plane-line"></i>
+</a>
+</div>
+<img src="https://github.com/Felps9.png?size=460" alt="" width="200" height="200" loading="lazy" class="mx-auto w-40 rounded-t-full object-cover md:w-48">
+</div>
+</div>
+</section>
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section">
+<h2 class="section-title">Contato</h2>
+<span class="section-subtitle">Vamos conversar</span>
+<div class="mx-auto grid max-w-4xl gap-10 px-6 md:grid-cols-[1fr_2fr]">
+<ul class="space-y-8">
+<li class="contact-info">
+<i class="ri-mail-line"></i>
+<div>
+<h3 class="font-medium text-slate-800 dark:text-white">E-mail</h3>
+<a href="#" class="text-sm hover:text-primary" data-contact-email></a>
+</div>
+</li>
+<li class="contact-info">
+<i class="ri-linkedin-box-line"></i>
+<div>
+<h3 class="font-medium text-slate-800 dark:text-white">LinkedIn</h3>
+<a href="https://www.linkedin.com/in/felipe-alves-b9229" target="_blank" rel="noopener noreferrer" class="text-sm hover:text-primary">felipe-alves-b9229</a>
+</div>
+</li>
+<li class="contact-info">
+<i class="ri-github-line"></i>
+<div>
+<h3 class="font-medium text-slate-800 dark:text-white">GitHub</h3>
+<a href="https://github.com/Felps9" target="_blank" rel="noopener noreferrer" class="text-sm hover:text-primary">Felps9</a>
+</div>
+</li>
+<li class="contact-info">
+<i class="ri-map-pin-line"></i>
+<div>
+<h3 class="font-medium text-slate-800 dark:text-white">Localização</h3>
+<span class="text-sm">São Paulo - SP</span>
+</div>
+</li>
+</ul>
+<form id="contact-form" class="grid gap-6 sm:grid-cols-2" novalidate>
+<label class="form-field">
+<span>Nome</span>
+<input type="text" name="name" required autocomplete="name">
+</label>
+<label class="form-field">
+<span>E-mail</span>
+<input type="email" name="email" required autocomplete="email">
+</label>
+<label class="form-field sm:col-span-2">
+<span>Assunto</span>
+<input type="text" name="subject" required>
+</label>
+<label class="form-field sm:col-span-2">
+<span>Mensagem</span>
+<textarea name="message" rows="6" required></textarea>
+</label>
+<p id="form-feedback" class="text-sm sm:col-span-2" role="status" aria-live="polite"></p>
+<div class="sm:col-span-2">
+<button type="submit" class="btn-primary">
+
+              Enviar mensagem <i class="ri-send-plane-line"></i>
+</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- ===================== FOOTER ===================== -->
+<footer class="mt-16 bg-primary pt-14 pb-8 text-white">
+<div class="mx-auto grid max-w-5xl gap-8 px-6 text-center md:grid-cols-3 md:text-left">
+<div>
+<h2 class="text-2xl font-semibold">Felipe</h2>
+<span class="text-sm text-primary-light">Desenvolvedor Front-End</span>
+</div>
+<ul class="flex flex-wrap justify-center gap-6 text-sm">
+<li><a href="#services" class="hover:text-primary-light">Serviços</a></li>
+<li><a href="#portfolio" class="hover:text-primary-light">Portfólio</a></li>
+<li><a href="#contact" class="hover:text-primary-light">Contato</a></li>
+</ul>
+<ul class="flex justify-center gap-5 text-xl md:justify-end">
+<li><a href="https://www.linkedin.com/in/felipe-alves-b9229" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-primary-light"><i class="ri-linkedin-box-fill"></i></a></li>
+<li><a href="https://github.com/Felps9" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-primary-light"><i class="ri-github-fill"></i></a></li>
+</ul>
+</div>
+<p class="mt-12 text-center text-xs text-primary-light">&copy; <span id="current-year"></span> Felipe Alves. Todos os direitos reservados.</p>
+</footer>
+<a href="#home" id="scroll-up" class="scroll-up" aria-label="Voltar ao topo">
+<i class="ri-arrow-up-line"></i>
+</a>
+<script src="js/config.js" defer></script>
+<script src="js/navigation.js" defer></script>
+<script src="js/skills.js" defer></script>
+<script src="js/qualification.js" defer></script>
+<script src="js/portfolio.js" defer></script>
+<script src="js/contact.js" defer></script>
+</body>
+</html>
+
+ 

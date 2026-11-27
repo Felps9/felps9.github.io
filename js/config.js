@@ -1,4 +1,4 @@
-js/config.js
+
  
 // TODO: trocar pelo e-mail real do Felipe
 

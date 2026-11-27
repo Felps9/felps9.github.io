@@ -1,4 +1,4 @@
-js/contact.js
+
  
 // Static site without a backend: the form opens the visitor's e-mail client with the message filled in.
 (() => {
